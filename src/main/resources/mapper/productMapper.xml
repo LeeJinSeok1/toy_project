@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="productSpace">
+    <insert id="productSave" parameterType="productDTO">
+        insert into product_table(
+            product_category_01, product_category_02, product_category_03,
+            product_price, product_sale_price, product_point_01, product_point_02,
+            product_point_03, product_basic_content, product_thumbnail_original_01,
+            product_thumbnail_original_02, product_thumbnail_original_03, product_thumbnail_original_04,
+            product_thumbnail_original_05, product_thumbnail_server_01, product_thumbnail_server_02,
+            product_thumbnail_server_03, product_thumbnail_server_04, product_thumbnail_server_05,
+            product_field_01, product_field_02, product_field_03, product_field_04,
+            product_field_05, product_content
+        ) values (
+                     #{product_category_01}, #{product_category_02}, #{product_category_03},
+                     #{product_price}, #{product_sale_price}, #{product_point_01}, #{product_point_02},
+                     #{product_point_03}, #{product_basic_content}, #{product_thumbnail_original_01},
+                     #{product_thumbnail_original_02}, #{product_thumbnail_original_03}, #{product_thumbnail_original_04},
+                     #{product_thumbnail_original_05}, #{product_thumbnail_server_01}, #{product_thumbnail_server_02},
+                     #{product_thumbnail_server_03}, #{product_thumbnail_server_04}, #{product_thumbnail_server_05},
+                     #{product_field_01}, #{product_field_02}, #{product_field_03}, #{product_field_04},
+                     #{product_field_05}, #{product_content}
+                 )
+    </insert>
+</mapper>
